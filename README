@@ -1,0 +1,9 @@
+There is a tutorial about getting start with CodeIgniter on IBM
+developerWorks[1]. But it was based on CodeIgniter 1.6.2, a little bit
+obsolete. So I modified the source codes to make that demo site in the
+tutorial run under CodeIgniter 2.1.0(latest version).
+
+To view the difference, git clone & git diff old new.
+
+[1] Getting started with CodeIgniter
+    http://www.ibm.com/developerworks/web/library/wa-codeigniter/
