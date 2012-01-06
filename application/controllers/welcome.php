@@ -1,9 +1,9 @@
-<?php
+<?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class Welcome extends Controller {
+class Welcome extends CI_Controller {
 
-    function Welcome() {
-        parent::Controller();
+    function __construct() {
+        parent::__construct();
     }
 
     function index(){
@@ -18,8 +18,8 @@ class Welcome extends Controller {
     function contactus(){
         $this->load->helper('url');
         if ($this->input->post('email')){
-            $this->load->model('MContacts','',TRUE);
-            $this->MContacts->addContact();
+            $this->load->model('Mcontacts','',TRUE);
+            $this->Mcontacts->addContact();
             redirect('welcome/thankyou','refresh');
         }else{
             redirect('welcome/index','refresh');
